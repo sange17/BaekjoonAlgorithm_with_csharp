@@ -1,9 +1,12 @@
 ﻿using System;
+using baekjoon;
 
-class Test
+class Program
 {
-  static void Main()
+  static void Main(string[] args)
   {
-    Console.WriteLine("Hello World");
+    Mathematics_02965 func = new Mathematics_02965();
+
+    func.solve();
   }
 }
