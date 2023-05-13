@@ -24,7 +24,8 @@ namespace baekjoon
         
         for(int j = 0; j < lineLength; j++){
 
-          sb.Append((Char)(line[j] - 65 + 65 + 1));
+          // 65 ~ 90
+          sb.Append((Char)(line[j] + 1 > 90 ? 65 : line[j] + 1));
         }
 
         sb.Append("\n");
