@@ -5,7 +5,7 @@ class Program
 {
   static void Main(string[] args)
   {
-    Mathsmetics_26711 func = new Mathsmetics_26711();
+    Implementation_04493 func = new Implementation_04493();
 
     func.solve();
   }
