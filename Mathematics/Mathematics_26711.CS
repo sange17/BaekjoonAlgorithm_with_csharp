@@ -1,4 +1,5 @@
 using System;
+using System.Numerics;
  
 namespace baekjoon
 {
@@ -6,10 +7,10 @@ namespace baekjoon
   {
     public void solve()
     {
-      int a = Int16.Parse(Console.ReadLine());
-      int b = Int16.Parse(Console.ReadLine());
+      BigInteger a = BigInteger.Parse(Console.ReadLine());
+      BigInteger b = BigInteger.Parse(Console.ReadLine());
 
-       System.Console.WriteLine(a+b);
+       System.Console.WriteLine(BigInteger.Add(b, a));
     }
   }
 }
