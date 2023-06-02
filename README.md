@@ -6,6 +6,12 @@ Studying algorithm with c#🔥
 1. [C# 빠른 입출력 예제](#C#-빠른-입출력-예제)
 ---
 
+목차
+[1.개발을 하고 싶어요](#개발을-하고-싶어요)
+[2.코딩을 잘하고 싶어요](#coding을-잘하고-싶어요)
+
+
+
 ## C# 빠른 입출력 예제
 ```
 StreamReader sr = new StreamReader(new BufferedStream(Console.OpenStandardInput()));
@@ -31,3 +37,6 @@ for(int i = 1; i <= N * M; i++){
 sr.Close();   
 sw.Close();
 ```
+
+## 개발을 하고 싶어요
+## Coding을 잘하고 싶어요
