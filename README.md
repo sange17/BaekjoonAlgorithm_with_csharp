@@ -1,10 +1,12 @@
 # BaekjoonAlgorithm_with_csharp
 Studying algorithm with c#🔥
 
+---
 ## 목차
 1. [C# 빠른 입출력 예제](#C#-빠른-입출력-예제)
+---
 
-### C# 빠른 입출력 예제
+## C# 빠른 입출력 예제
 ```
 StreamReader sr = new StreamReader(new BufferedStream(Console.OpenStandardInput()));
 StreamWriter sw = new StreamWriter(new BufferedStream(Console.OpenStandardOutput()));
