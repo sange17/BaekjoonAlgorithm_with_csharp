@@ -5,7 +5,7 @@ class Program
 {
   static void Main(string[] args)
   {
-    Mathematics_11648 func = new Mathematics_11648();
+    Bruteforce_06131 func = new Bruteforce_06131();
 
     func.solve();
   }
