@@ -12,10 +12,10 @@ namespace baekjoon
       int M = Int32.Parse(line.Split(' ')[1]);
 
       string[,] array = new string[N, M];
-      int[] rowArray = new int[N];
-      int[] colArray = new int[M];
+      int rowCount = 0;
+      int colCount = 0;
       int rowCheck = 0;
-      int colCheck = 0;
+      int[] colArray = new int[M];
 
       for(int i = 0; i < N; i++)
       {
@@ -24,37 +24,24 @@ namespace baekjoon
         rowCheck = 0;
         for(int j = 0; j < M; j++)
         {
-          array[i, j] = line.Split(' ')[j];
+          array[i, j] = line[j].ToString();
           if(array[i, j] == "X")
           {
             rowCheck++;
 
             colArray[j] = 1;
           }
-          else
-          {
-            colArray[j] = 0;
-          }
         }
 
-        if(rowCheck == 0)
-        {
-          rowArray[i] = 0;
-        }
-        else
-        {
-          rowArray[i] = 1;
-        }
+        if(rowCheck == 0) rowCount++;
       }
 
-      for(int i = 0; i < N; i++)
+      for(int i = 0; i < M; i++)
       {
-        
-        for(int j = 0; j < M; j++)
-        {
-          
-        }
+        if(colArray[i] == 0) colCount++;
       }
+
+      System.Console.WriteLine(rowCount + colCount - Math.Min(rowCount, colCount));
     }
   }
 }
