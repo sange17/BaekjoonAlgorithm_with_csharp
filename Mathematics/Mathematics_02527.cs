@@ -14,9 +14,7 @@ namespace baekjoon
       int x1, y1, x2, y2, X1, Y1, X2, Y2;
       while(true)
       {
-        str = sr.ReadLine();
-
-        if(str == null || str.Length == 0)
+        if((str = sr.ReadLine()) == null || str.Length == 0)
         {
           sr.Close();
           sw.Close();

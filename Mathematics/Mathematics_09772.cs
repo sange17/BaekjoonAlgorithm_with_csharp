@@ -14,9 +14,7 @@ namespace baekjoon
 
       while(true)
       {
-        str = sr.ReadLine();
-
-        if(str == null || str.Length == 0)
+        if((str = sr.ReadLine()) == null || str.Length == 0)
         {
           sr.Close();
           sw.Close();

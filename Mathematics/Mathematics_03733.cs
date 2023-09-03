@@ -15,8 +15,7 @@ namespace baekjoon
 
       while(true)
       {
-        str = Console.ReadLine();
-        if(str == null) 
+        if((str = Console.ReadLine()) == null || str.Length == 0) 
         {
           System.Console.WriteLine(sb);
           break;

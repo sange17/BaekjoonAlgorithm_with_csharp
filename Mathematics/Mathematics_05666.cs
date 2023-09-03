@@ -1,28 +1,31 @@
 using System;
+using System.Diagnostics.Contracts;
 
 namespace baekjoon
 {
-  class Implementation_26489
+  class Mathematics_05666
   {
     public void solve()
     {
       StreamReader sr = new StreamReader(new BufferedStream(Console.OpenStandardInput()));
       StreamWriter sw = new StreamWriter(new BufferedStream(Console.OpenStandardOutput()));
-      
-      string str;
-      int count = 0;
 
+      string line = string.Empty;
+      double H = 0;
+      double P = 0;
       while(true)
       {
-        if((str = sr.ReadLine()) == null || str.Length == 0)
+        if((line = sr.ReadLine()) == null || line.Length == 0)
         {
-          sw.Write(count);
           sr.Close();
           sw.Close();
           break;
         }
 
-        if(str.Equals("gum gum for jay jay")) count++;
+        H = double.Parse(line.Split(" ")[0]);
+        P = double.Parse(line.Split(" ")[1]);
+
+        sw.WriteLine((H / P).ToString("0.00"));
       }
     }
   }
