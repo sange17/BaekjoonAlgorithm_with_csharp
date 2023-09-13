@@ -5,7 +5,7 @@ class Program
 {
   static void Main(string[] args)
   {
-    Implementation_24072 func = new Implementation_24072();
+    Datastructures_01717 func = new Datastructures_01717();
 
     func.solve();
   }
