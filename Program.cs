@@ -5,7 +5,7 @@ class Program
 {
   static void Main(string[] args)
   {
-    DP_17070 func = new DP_17070();
+    Backtracking_15686 func = new Backtracking_15686();
 
     func.solve();
   }
