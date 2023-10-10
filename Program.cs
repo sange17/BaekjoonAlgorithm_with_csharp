@@ -5,7 +5,7 @@ class Program
 {
   static void Main(string[] args)
   {
-    Backtracking_15686 func = new Backtracking_15686();
+    Mathematics_28701 func = new Mathematics_28701();
 
     func.solve();
   }
