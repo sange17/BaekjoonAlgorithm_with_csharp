@@ -6,13 +6,17 @@ namespace baekjoon
   {
     public void solve()
     {
-      string line = Console.ReadLine();
+      string? line = Console.ReadLine();
+
+      if(line == null) return;
 
       int t1 = Int32.Parse(line.Split(" ")[0]);
       int e1 = Int32.Parse(line.Split(" ")[1]);
       int f1 = Int32.Parse(line.Split(" ")[2]);
 
       line = Console.ReadLine();
+
+      if(line == null) return;
 
       int t2 = Int32.Parse(line.Split(" ")[0]);
       int e2 = Int32.Parse(line.Split(" ")[1]);
