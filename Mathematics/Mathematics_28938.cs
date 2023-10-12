@@ -6,6 +6,7 @@ namespace baekjoon
   {
     public void solve()
     {
+      // 체크인 테스트
       StreamReader sr = new StreamReader(new BufferedStream(Console.OpenStandardInput()));
       StreamWriter sw = new StreamWriter(new BufferedStream(Console.OpenStandardOutput()));
 
